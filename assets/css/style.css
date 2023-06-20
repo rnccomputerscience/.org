@@ -1,0 +1,232 @@
+.logo{
+  width: 141px;
+    margin: 5px;
+}
+.bg-theme{
+    padding: 0px;
+    background-color: #132f57;
+}
+.brand-logo{
+     width: 90px;
+    margin-left: 20px;
+	display: none;
+}
+.logo-head{
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: emoji;
+}
+.ico-icon{
+    margin-top: 20px;
+    position: absolute;
+    right: 0; 
+}
+.ico-icon .fab{
+    border: 1px solid gray;
+    width: 52px;
+    height: 52px;
+    background-color: white;
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px;
+    color: #0056f3;
+}
+.ico-icon .fab:hover{
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: yellow;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    margin-right: 120px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+   
+    color: black;
+    background-color: #ffb516;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: black;
+    background-color: #ffb516;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.outer-right{
+    text-align: center;
+    padding: 66px;
+    background-image: url(../images/blue-back-bg.jpg);
+    background-color: #13305d;
+}
+.outer-right h4{
+    color: #ff992f;
+    
+}
+.outer-right h5{
+    color: #4bff00;
+    
+}
+.mrq{
+    text-align: center;
+    padding: 85px 0px 122px;
+    text-align: center;
+    background-image: url(../images/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mrq2{
+    text-align: center;
+    padding: 85px 0px 122px;
+    text-align: center;
+    background-image: url(../images/img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mrq3{
+    text-align: center;
+    padding: 85px 0px 122px;
+    text-align: center;
+    background-image: url(../images/img3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.mrq b, .mrq2 b, .mrq3 b{
+    color: #fff;
+}
+.mrq h3, .mrq2 h3, .mrq3 h3{
+    color: #4400ca;
+}
+
+.get-btn{
+    background: none;
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 96px;
+    border: 1px solid white;
+    padding: 10px 33px;
+}
+.get-btn:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 50px;
+    background-color: #132f57;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+
+
+/*sticky*/
+.sticky{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+    
+}
+.sticky + .content{
+    margin-top: 30px;
+}
+
+/*about us page*/
+.heading-about{
+	padding: 5px;
+	background-color: brown;
+	color: white;
+	margin-top: 15px;
+	text-align: center;
+}
+.img-about-style{
+	border: 20px solid #00c0d0;
+    border-radius: 26px;
+	
+}
+
+/*misiion and Vision */
+.text-mission-vission{
+	background-color: #004456;
+    color: #fff;
+    padding: 14px;
+}
+
+
+.principle-mmg{
+	margin-top: 50px;
+    border: 10px solid gray;
+    border-radius: 19px;
+}
+
+
+.heading-ff{
+	padding: 5px;
+	text-align: center;
+	color: #2fb194;
+	font-weight: bold;
+}
+
+.f-mmg{
+	border: 2px solid black;
+	margin-top: 20px;
+}
+
+
+.techers-img{
+	border: 2px solid gray;
+	border-radius: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .ico-icon .fab{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    }
+    .logo-head{
+     margin-top: 23px;
+    font-size: 17px;
+    }
+    .navbar-light .navbar-nav .nav-link{ 
+        padding-left: 13px;
+        margin-right: 0px;
+}
+	.logo{
+		display: none
+	}
+	.brand-logo{
+	display: block;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
