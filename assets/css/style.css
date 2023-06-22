@@ -52,6 +52,8 @@
     color: black;
     background-color: #ffb516;
 }
+
+
 .dropdown:hover .dropdown-menu{
     display: block;
 }
@@ -185,11 +187,7 @@
 	border-radius: 100%;
 }
 
-
-
-
-
-
+  
 
 @media only screen and (max-width: 768px){
     .ico-icon .fab{
@@ -216,7 +214,20 @@
 }
     
     
-    
+/*This is my code*/
+.dropdown-item {
+    background-color: #ffffff;
+    border: none;
+    color: #004456;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #0056b3;
+  }
+  
     
     
     

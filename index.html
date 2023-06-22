@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home: Ramananda College</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Home: Ramananda College</title> 
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <style>
+        /* CSS styles for the warning message */
+        .warning-message {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        </style>
+
+  <style>
+        .dropdown-menu {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .dropdown-divider {
+          border-top: 1px solid #ccc;
+          margin: 0.5rem 0;
+      }
+  </style>
+
+<!-- CSS code for the animation -->
+<style>
+  .animated-link {
+    animation: color-change 1s linear infinite;
+    margin-bottom: 10px;
+  }
+
+  @keyframes color-change {
+    0% {
+      color: initial;
+    }
+    50% {
+      color: #ff0000; /* Set the desired color during the animation */
+    }
+    100% {
+      color: initial;
+    }
+  }
+</style>
+
 <!--css file-->
    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!--   external css-->
@@ -15,6 +58,20 @@
    
     </head>
     <body>
+      <!-- Warning message element -->
+<div id="warning" class="warning-message">
+  It is a small effort of our own knowledge about the webpage and website and so that students can easily know about the college and always keep themselves updated with the college.
+   Click <a href="#" onclick="removeWarning()">here</a> to remove it.
+</div>
+
+<!-- Include the JavaScript code to remove the warning message -->
+<script>
+  // JavaScript function to remove the warning message
+  function removeWarning() {
+      var warningElement = document.getElementById("warning");
+      warningElement.style.display = "none";
+  }
+</script>
          <div class="container-fluid bg-info">
              <div class="container">
                <div class="row">
@@ -28,9 +85,9 @@
                    
                    <div class="col-sm-4 col-4">
                     <div class="ico-icon">
-                    <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-twitter fa-2x "></i></a>
-                    <a href="#"><i class="fab fa-instagram fa-2x "></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x "></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x "></i></a>
                      </div> 
                    </div> 
                </div>
@@ -49,7 +106,14 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Home </a>
+        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://tawk.to/chat/649371c8cc26a871b023f2b7/1h3fv8u61">livechat</a>
+          <!--<button on click="changeColor()" class="dropdown-item" href="https://openai.com/blog/chatgpt">ChatGpt </button>-->
+          <a class="dropdown-item" href="https://openai.com/blog/chatgpt">Click:Try ChatGpt for Question-Solving</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,8 +121,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="about-us.html">About Us</a>
-          <a class="dropdown-item" href="mission-&-vision.html">Mission & Vision</a> 
-          <a class="dropdown-item" href="principle-message.html">Principle Message</a> 
+          <a class="dropdown-item" href="mission-&-vision.html">Student Life</a> 
+          <a class="dropdown-item" href="principle-message.html">Developer's Message</a> 
         </div>
       </li> 
       <li class="nav-item dropdown">
@@ -69,6 +133,31 @@
           <a class="dropdown-item" href="admision-procedure.html">Addmission Procedure</a>
           <a class="dropdown-item" href="facilities.html">Facilities</a> 
           <a class="dropdown-item" href="our-team.html">C.S Department</a> 
+          <a class="dropdown-item" href="department.html">Others Department</a> 
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Regular Updates
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://bkuresults01.com/oas/OpenLink/PreviourYearQuestionPaper">Previous year questions paper</a>
+          <a class="dropdown-item" href="https://aviortechnologies.in/developer/vas/ramananda_vas/">Library: check book</a> 
+          <a class="dropdown-item" href="https://www.ramanandacollege.org/study_material.php">Study Material</a> 
+          <a class="dropdown-item" href="https://www.bankurauniv.ac.in/get-page-details-category/5">News & Events</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Notice
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://www.bankurauniv.ac.in/uploads/tempimagepdflink/1687367745.pdf">UG</a> 
+          <a class="dropdown-item" href="https://www.bankurauniv.ac.in/uploads/tempimagepdflink/1687164025.pdf">PG</a> 
+          <a class="dropdown-item" href="https://ramanandacollege.org/notice/NOTICE%20FOR%20OASIS%20SCHOLARSHIP%20(4).pdf">scholarship</a> 
+          <a class="dropdown-item" href="ug.html">UG Examination Notice:Bankura University</a> 
+          <a class="dropdown-item" href="https://www.bankurauniv.ac.in/uploads/tempimagepdflink/1686398881.pdf">PG Examination Notice:Bankura University</a>
+          <a class="dropdown-item" href="https://cms.ecounselling.nic.in/CMSAdmin/Handler/FileHandler.ashx?B=119&A=200&F=44&L=P">Others Exam Preparation</a>
         </div>
       </li> 
       <li class="nav-item dropdown">
@@ -79,13 +168,76 @@
           <a class="dropdown-item" href="photos.html">Photos</a>  
         </div>
       </li> 
-      <li class="nav-item">
+      <li class="nav-item ">
         <a class="nav-link" href="contact-us.html">Contact us</a>
-      </li>
-    </ul> 
+      </li>    
+      </ul> 
   </div>
 </nav>
-<!-- end strat navbar        -->   
+<!-- end strat navbar        -->  
+
+
+
+
+
+
+    
+       
+       <!-- HTML code for the section where the latest link will be displayed -->
+<div id="latest-link-section">
+  <h>Important Link:</h>
+  <a id="latest-link" href="https://www.ramanandacollege.org/" class="animated-link">Ramananda College Official Website</a>
+  <a id="latest-link" href="https://bkuresults01.com/oas/login/auth" class="animated-link">Bankura University Student Login Page</a>
+  <a id="latest-link" href="https://www.bankurauniv.ac.in/" class="animated-link">Bankura University Official Website</a>
+</div>
+
+<!-- JavaScript code to fetch and update the latest link -->
+<script>
+  // Function to fetch the latest link from the server
+  function fetchLatestLink() {
+    // Make an API request or retrieve the link from your data source
+    // Replace the placeholder URL with your actual endpoint or data retrieval logic
+    fetch('https://www.ramanandacollege.org/')
+      .then(response => response.json())
+      .then(data => {
+        // Update the link element with the latest link
+        const latestLinkElement = document.getElementById('latest-link');
+        latestLinkElement.textContent = data.url;
+        latestLinkElement.href = data.url;
+
+        // Generate a random color for the link
+        const randomColor = generateRandomColor();
+        latestLinkElement.style.color = randomColor;
+
+        // Add CSS animation classes to the link element
+        latestLinkElement.classList.remove('animated-link');
+        void latestLinkElement.offsetWidth; // Trigger reflow to restart the animation
+        latestLinkElement.classList.add('animated-link');
+      })
+      .catch(error => {
+        console.error('Error fetching latest link:', error);
+      });
+  }
+
+  // Function to generate a random color in hexadecimal format
+  function generateRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  // Call the fetchLatestLink function repeatedly every 5 seconds
+  setInterval(fetchLatestLink, 5000);
+</script>
+
+
+  
+
+
+
 
 <!--    start cauresel    -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -116,17 +268,18 @@
     <div class="row">
         <div class="col-sm-8">
             <h2>Welcome to Ramananda College</h2>
-            <p>Ramananda College is a pioneering higher-educational institution located at Bishnupur, within the district of Bankura. It is the sole co-educational Degree College with PG courses recognized by the UGC within Bishnupur town. Since its inception in 1945, this institution has been serving the cause of higher education in the local community and also of students from far-away, remote villages. Even today students from other districts are studying here.
+            <p>Ramananda College was established in 1945 and is located in India and belongs to Bishnupur.  This college works under Bankura University. PIN-722122, State-West Bengal
+              For those who want to come or study in this college from far away, there is no problem, come here, Hostel is open.
+              The teachers here always help the students with the maximum effort in any career related work.  Along with studies, the environment here is also very good and the wind coming from the lalbandh in front is a wonderful feeling and fills the mind and soul with joy.          
+              An exhibition is held here every year in which every department participates and the students of every department come together to display various knowledge and spread the knowledge.  Everyone is invited to this event.
+              This college has more than 110 teachers and more than 1500 students.
 
-  Sri Ramnalini Chakraborty, freedom-fighter and social worker of Bishnupur, Sri Radhagobinda Roy, founder-principal of this college and ex-minister, Govt. of West Bengal and other eminent community members of Bishnupur decided to establish this college here. Sri Ramnalini Chakraborty, the Koley family, Sri Anil Kumar Bhattacharya, members of the Friends’ Union Club and the community maximally funded the costs for building this college. The college is named after the son of the soil, Sri Ramananda Chattopadhyay (1865-1943), journalist, editor and scholar who was active during the Bengal Renaissance.</p>
-            
-            
-            
             <p><b>Core Values</b></p>
-            <i>"Nurturing individuals towards excellence in a happy, value based and progressive learning community."</i>
+            <i>"The brain is the most valuable resource in the world and knowledge helps to live life properly."</i>
         </div>
         <div class="col-sm-4">
             <div class="outer-right">
+              
                 <img class="img-fluid" src="assets/images/convocation-hat.png">
                 <h4>ADMISSIONS</h4>
                 <h5>OPEN FOR 2023-2024</h5>
@@ -242,7 +395,7 @@
         <div class="col-sm-6">
            <div class="row">
                <div class="col-sm-6">
-                   <span>Designed with  by ramanandacollege.org</span>
+                   <span>Designed with  by rnc_cs_student</span>
                </div>
                <div class="col-sm-6">
                     <span>© 2023. All Rights Reserved.</span>
@@ -252,18 +405,18 @@
         <div class="col-sm-6">
             
            <div class="row">
+               <!--<div class="col-sm-3">
+                    <span></span>
+               </div>-->
+               <div class="col-sm-9">
+                    <span>This webpage is connected to Ramananda College</span>
+               </div>
+               <!--<div class="col-sm-2">
+                    <span></span>
+               </div>
                <div class="col-sm-3">
-                    <span>About us</span>
-               </div>
-               <div class="col-sm-4">
-                    <span>Admission procedure</span>
-               </div>
-               <div class="col-sm-2">
-                    <span>Photo</span>
-               </div>
-               <div class="col-sm-3">
-                    <span>Contact us</span>
-               </div>
+                    <span></span>
+               </div>-->
            </div> 
             
         </div>
