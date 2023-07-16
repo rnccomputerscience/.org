@@ -72,6 +72,31 @@
       warningElement.style.display = "none";
   }
 </script>
+
+<div id="date-time"></div>
+<script>// Function to update the date and time
+  function updateDateTime() {
+    // Get the current date and time
+    var dateTime = new Date();
+  
+    // Format the date and time as desired
+    var date = dateTime.toDateString();
+    var time = dateTime.toLocaleTimeString();
+  
+    // Update the HTML element with the formatted date and time
+    document.getElementById("date-time").textContent = "Current Date: " + date + " | Current Time: " + time;
+  }
+  
+  // Call the updateDateTime function initially to display the date and time
+  updateDateTime();
+  
+  // Update the date and time every second (1000 milliseconds)
+  setInterval(updateDateTime, 1000);
+  </script>
+  <div id="ad-content">
+    <div id="date-time"></div>
+  </div>
+
          <div class="container-fluid bg-info">
              <div class="container">
                <div class="row">
@@ -79,14 +104,14 @@
                        <img class="img-fluid logo" src="assets/images/logo.webp" alt="logo image">
                    </div>
                    
-                   <div class="col-sm-4 col-5">
-                       <h1 class="logo-head">RAMANANDA COLLEGE</h1>
+                   <div class="col-sm-4 col-4">
+                       <h1 class="logo-head" style="font-family: 'Edwardian Script ITC',sans-serif;font-size: 54px;font-weight: bold;">Ramananda College</h1><h3 style="font-style: italic;text-align: center;">Bishnupur, Bankura</h3>
                    </div>
                    
                    <div class="col-sm-4 col-4">
                     <div class="ico-icon">
                     <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
-                    <a href="https://twitter.com/"><i class="fab fa-twitter fa-2x "></i></a>
+                    <a href="index.html"><i class=" fab fa-twitter fa-2x"></i></a>
                     <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x "></i></a>
                      </div> 
                    </div> 
@@ -122,7 +147,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="about-us.html">About Us</a>
           <a class="dropdown-item" href="mission-&-vision.html">Student Life</a> 
-          <a class="dropdown-item" href="principle-message.html">Developer's Message</a> 
+          <a class="dropdown-item" href="message.html">Developer's Message</a> 
         </div>
       </li> 
       <li class="nav-item dropdown">
@@ -186,8 +211,8 @@
        <!-- HTML code for the section where the latest link will be displayed -->
 <div id="latest-link-section">
   <h>Important Link:</h>
-  <a id="latest-link" href="https://www.ramanandacollege.org/" class="animated-link">Ramananda College Official Website</a>
-  <a id="latest-link" href="https://bkuresults01.com/oas/login/auth" class="animated-link">Bankura University Student Login Page</a>
+  <a id="latest-link" href="https://www.ramanandacollege.org/" class="animated-link">Ramananda College Official Website </a>||
+  <a id="latest-link" href="https://bkuresults01.com/oas/login/auth" class="animated-link">Bankura University Student Login Page </a>||
   <a id="latest-link" href="https://www.bankurauniv.ac.in/" class="animated-link">Bankura University Official Website</a>
 </div>
 
@@ -283,6 +308,13 @@
                 <img class="img-fluid" src="assets/images/convocation-hat.png">
                 <h4>ADMISSIONS</h4>
                 <h5>OPEN FOR 2023-2024</h5>
+                <a href="https://www.ramanandacollege.org/">Visit Official Website</a>
+                <style>
+                  .colored-text {
+                    color: white; /* Text color */
+                    background-color: red; /* Fill color */
+                  }
+                </style>
             </div>
         </div>
     </div>
@@ -317,10 +349,8 @@
                   font-size: 16px;
                   cursor: pointer;
                 }
-                </style>
-                
-                <a href="https://www.ramanandacollegeonlineadmission.in/student_login.aspx" class="button">UG STUDENT-LOGIN</a>
-                
+                </style>               
+                <a href="https://www.ramanandacollegeonlineadmission.in/student_login.aspx" class="button">UG STUDENT-LOGIN</a>                
         </div>
         
         </div> 
@@ -395,7 +425,7 @@
         <div class="col-sm-6">
            <div class="row">
                <div class="col-sm-6">
-                   <span>Designed with  by rnc_cs_student</span>
+                   <span>Designed  by rnc_cs_student</span>
                </div>
                <div class="col-sm-6">
                     <span>© 2023. All Rights Reserved.</span>
@@ -403,11 +433,10 @@
            </div> 
         </div>
         <div class="col-sm-6">
-            
-           <div class="row">
-               <!--<div class="col-sm-3">
+            <!--<div class="row">  -->
+               <div class="col-sm-3">
                     <span></span>
-               </div>-->
+               </div>
                <div class="col-sm-9">
                     <span>This webpage is connected to Ramananda College</span>
                </div>

@@ -12,10 +12,15 @@
 	display: none;
 }
 .logo-head{
-    color: white;
+    /*color: white;*/
     margin-top: 20px;
     font-weight: bold;
     font-family: emoji;
+    
+   
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ico-icon{
     margin-top: 20px;
@@ -229,8 +234,24 @@
   }
   
     
-    
-    
+  #date-time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+ /* @font-face {
+    font-family: 'Algerian';
+    src: url('"Edwardian Script ITC"') format('truetype');
+  } */
+   
+  #college-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  
     
     
     
