@@ -52,7 +52,7 @@
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="https://tawk.to/chat/649371c8cc26a871b023f2b7/1h3fv8u61">livechat</a>
           <!--<button on click="changeColor()" class="dropdown-item" href="https://openai.com/blog/chatgpt">ChatGpt </button>-->
-          <a class="dropdown-item" href="https://openai.com/blog/chatgpt">Click:Try ChatGpt for Question-Solving</a>
+          <a class="dropdown-item" href="https://chat.openai.com/auth/login">ChatGpt for Question-Solving</a>
         </div>
        </li>
        <li class="nav-item dropdown">
@@ -92,11 +92,9 @@
            Notice
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="https://www.bankurauniv.ac.in/uploads/tempimagepdflink/1687367745.pdf">UG</a> 
-           <a class="dropdown-item" href="https://www.bankurauniv.ac.in/uploads/tempimagepdflink/1687164025.pdf">PG</a> 
-           <a class="dropdown-item" href="https://ramanandacollege.org/notice/NOTICE%20FOR%20OASIS%20SCHOLARSHIP%20(4).pdf">scholarship</a> 
-           <a class="dropdown-item" href="ug.html">UG Examination Notice:Bankura University</a> 
-           <a class="dropdown-item" href="https://www.bankurauniv.ac.in/uploads/tempimagepdflink/1686398881.pdf">PG Examination Notice:Bankura University</a>
+           <a class="dropdown-item" href="ugnotice.html">UG</a> 
+           <a class="dropdown-item" href="pgnotice.html">PG</a> 
+           <a class="dropdown-item" href="scholarshipnotice.html">scholarship</a> 
            <a class="dropdown-item" href="https://cms.ecounselling.nic.in/CMSAdmin/Handler/FileHandler.ashx?B=119&A=200&F=44&L=P">Others Exam Preparation</a>
          </div>
        </li> 
@@ -159,47 +157,68 @@
              </div>
          </div> 
       </div>
-      <div class="col-sm-6">
-          
-         <div class="row">
-             <!--<div class="col-sm-3">
-                  <span></span>
-             </div>-->
+     <div class="col-sm-6">
+          <div class="row">
              <div class="col-sm-9">
                   <span>This webpage is connected to Ramananda College</span>
              </div>
-             <!--<div class="col-sm-2">
-                  <span></span>
+             <div class="col-sm-2">
+                  <span><!-- HTML -->
+                    <p> Visitors No: <span id="visitorCount">0</span></p>
+                    <script> // JavaScript
+                   document.addEventListener('DOMContentLoaded', function() {
+                   // Check if the visitorCount key exists in local storage
+                   if (localStorage.getItem('visitorCount')) {
+                   // Retrieve the current visitor count from local storage
+                   var count = parseInt(localStorage.getItem('visitorCount'));
+                   // Increment the count by 1
+                   count += 1;
+                   // Update the visitor count on the webpage
+                   document.getElementById('visitorCount').textContent = count;
+                   // Update the visitor count in local storage
+                   localStorage.setItem('visitorCount', count);
+                   } else {
+                   // Set the initial visitor count to 1
+                   var count = 1;
+                   // Store the visitor count in local storage
+                   localStorage.setItem('visitorCount', count);
+                   // Display the initial visitor count on the webpage
+                   document.getElementById('visitorCount').textContent = count;
+                   }
+                   });
+                   </script></span>
              </div>
-             <div class="col-sm-3">
+            </div>
+             <!--<div class="col-sm-3">
                   <span></span>
              </div>-->
-         </div> 
-          
-      </div>
-  </div>
-  </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 
+
+
 <!--       js file        -->
-  
-   <script src="assets/js/bootstrap.min.js"></script>
-   <script>
-        window.onscroll = function(){myFunction()};
-       var navbar = document.getElementById("navbar");
-       var sticky = navbar.offsetTop;
-       
-       
-       function myFunction(){
-           if(window.pageYOffset >= sticky){
-               navbar.classList.add("sticky");
-           }
-           else{
-               navbar.classList.remove("sticky");
-           }
-       }
-        
-    </script>
-    </body>
+
+ <script src="assets/js/bootstrap.min.js"></script>
+ <script>
+      window.onscroll = function(){myFunction()};
+     var navbar = document.getElementById("navbar");
+     var sticky = navbar.offsetTop;
+     
+     
+     function myFunction(){
+         if(window.pageYOffset >= sticky){
+             navbar.classList.add("sticky");
+         }
+         else{
+             navbar.classList.remove("sticky");
+         }
+     }
+      
+  </script>
+  </body>
 </html>
